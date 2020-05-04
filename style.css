@@ -1,0 +1,736 @@
+/*
+* Theme Name: Thrive Nouveau Child
+* Template: thrive-nouveau
+* DLR 20190917
+*/
+
+/*
+ * dark-color: cyan		#014B62 (3025 CP)
+ * medium-color: blue-green	#01828F (2237 c)
+ * light-color: cyan		#97c3d4 (4174 c)
+ * bg-color: eggshell white	#F2EEED (9345 C)    
+ * main-accent: goldish		#F7B319 (7409 C)
+ */
+:root {
+    --dark-color: #014B62; /* (3025 CP) */
+    --medium-color: #01828F; /* (2237 c) */
+    --light-color: #97c3d4; /* (4174 c) */
+	--light-color-text: #F2EEED; 
+	--light-color-text-hover: #F7B319;
+    --bg-color: #F2EEED; /* (9345 C)     */
+	--bg-color-text: #000; /* black */
+    --main-accent: #F7B319; /* (7409 C)	 */
+	--secondary-menu-bg-color: var(--light-color); /* old-#97c3d4 */
+	--secondary-menu-text-color: var(--light-color-text);
+	--secondary-menu-text-hover-color: var(--light-color-text-hover);
+	--allyu-even-toggle-bg-color: #EFEFEF;
+	--allyu-even-toggle-text-color: black;
+	--allyu-odd-toggle-bg-color: white;
+	--allyu-odd-toggle-text-color: black;
+}
+/* 
+ * Using the variable
+ * 		background-color: var(--secondary-menu-bg-color); 
+ * 		color: var(--secondary-menu-text-color);
+ * 
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0!important;
+}
+
+#page-content-wrapper-canvas {
+	padding: 0!important;
+}
+
+/* #97c3d4 */
+.secondary-menu {
+	background-color: #97c3d4;
+	padding: 5px;
+}
+
+.secondary-menu a {
+	color: #fff;
+}
+
+.secondary-menu a:nth-child(2) {
+	padding-left: 15px;
+}
+
+.allyu-odd-toggle {
+	background-color: var(--allyu-odd-toggle-bg-color);
+	color: var(--allyu-odd-toggle-text-color);
+}
+.allyu-even-toggle {
+	background-color: var(--allyu-even-toggle-bg-color);
+	color: var(--allyu-even-toggle-text-color);
+}
+
+/* The hero image */
+.hero-image {
+  background-size: cover!important;
+  /* Set a specific height */
+  height: 550px;
+}
+
+/* Place text in the middle of the image */
+
+.hero-text {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  top: 35%;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+}
+
+.hero-text h1 {
+	color: white;
+	font-size: 5rem;
+	line-height: 1.3;
+}
+
+.hero-text p {
+	font-family: 'Open-sans', sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: 50px!important;
+}
+
+/* Ally U Concept Mission Statement */
+.mission-statement {
+	text-align: center;
+	background-color: #EFEFEF;
+	padding: 1rem;
+	margin-bottom: 0!important;
+	line-height: 2;
+}
+
+main {
+	padding: 0rem 0; /* source of extra space before teh first row */
+}
+
+/* Ally U Support Group Cards */
+
+.support-group-intro h1, .support-group-intro p {
+	text-align: center;
+}
+
+.support-group-intro p {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+	
+.support-group-intro h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: var(--light-color);
+}
+
+/* Float four columns side by side */
+/*.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}*/
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* Style the counter cards */
+.row {
+	text-align: center;	
+}
+
+.equal-height-columns {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--medium-color);
+  background-color: #fff;
+  line-height: 1.8;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.card:hover {
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.allyu-cta-btn-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+
+.allyu-cta-btn-1 button {
+	font-family: 'Open-sans', sans-serif!important;
+	font-weight: bold;
+	padding: 5px 20px;
+}
+	
+.allyu-cta-btn-1 button .fa-user {
+	font-size: 1rem;
+	padding-left: 0;
+}
+
+.service-group h3, .service-group p, .service-group i {
+	color: var(--medium-color);
+}
+
+.service-title i {
+	float: left;
+	padding: 0;
+}
+
+footer {
+	padding: 4.5rem 0;
+	background-color: #97c3d4;
+}
+
+footer div.row{
+	text-align: left;
+}
+
+footer h3 {
+	color: #fff;
+}
+
+.ownership {
+	border-top: 3px solid #fff;
+	background-color: #EFEFEF;
+}
+
+.ownership h6 {
+	line-height: 48px;
+	margin-bottom: 0 !important;
+}
+
+/* This background and font specs is for the widgets on the sidebar */
+#secondary .widget-title, .widget.home-widgets h3.widget-title {
+    background-color: var(--medium-color);
+    color: black;
+}
+.widget_bp_core_members_widget {
+		background-color: var(--bg-color);
+}
+#secondary .widget_top-posts ul li a:hover {
+		color:blue;
+		font-weight: 400;
+		text-decoration: underline;
+}
+/* This is the overall background for the sidebar widgets */
+.sidebar-widgets  {
+	background: #f3fbf9;
+}
+ 
+/* The widget area paragraph text */
+.widget-area .widget.bp-latest-activities blockquote p {
+    color: black;
+	font-size: 16px;
+}
+
+/* The widget area footer that includes time since text */
+.widget-area .widget.bp-latest-activities blockquote footer {
+    font-size: 12px;
+}
+
+
+/* for the icon in the site map */
+.widget.widget_pages ul li a::before {
+		color: black;
+}
+
+.col-sm-6 {
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.allyu-counter-stats {
+	border-top: 1px solid #d7d7d7;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  padding-top: 8.5rem;
+  padding-bottom: 4.5rem;
+  margin-bottom: 0 !important;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #97c3d4;
+  border-top: 1px solid #97c3d4;
+  top: 0;
+  width: 489px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.counter, .service-group {
+	padding-right: 5rem;
+	padding-left: 5rem;
+}
+
+.service-group {
+	padding-top: 4.5rem;
+}
+
+i {
+	padding: 15px;
+	font-size: 25px;
+}
+
+.allyu-cta {
+	padding-top: 4.5rem;
+	padding-bottom: 4.5rem;
+}
+
+.services {
+	background-color: #f2eeed;
+	padding: 4.5rem 0;
+}
+
+.emergency {
+	padding-top: 4.5rem;
+	height: auto;
+	margin-bottom: 4px;
+}
+
+.emergency-content {
+	margin: 0 auto;
+	width: 75%;
+}
+
+.emergency-intro {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0!important;
+}
+
+.emergency-intro, .emergency-p {
+	text-align: center;
+	line-height: 2;
+}
+
+.emergency-p  {
+	padding: 4.5rem;
+}
+
+.fa-chevron-down {
+	font-size: 9px;
+	padding: 0;
+}
+
+/* PRIMARY MENU */
+
+#hamburger {
+  width: 25px;
+  position: relative;
+  margin: auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #01818F;
+  border-radius: 9px;
+  opacity: 1;
+  left: 7px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(2) {
+  top: 11px;
+}
+
+#hamburger span:nth-child(3) {
+  top: 22px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -30px;
+}
+
+#hamburger.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.sitenavigation ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+  line-height: 101px;
+}
+
+.sitenavigation li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  margin-left: -4px;
+  line-height: 20px;
+}
+
+.sitenavigation li.nav-dropdown:hover > a {
+  background-color: #CCC !important;
+  color: #000;
+}
+
+.sitenavigation li a {
+  color: #758283;
+  text-decoration: none;
+  display: block;
+  padding: 11px 14px;
+  font-size: 0.9375em;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sitenavigation li a.nav-path-selected, .sitenavigation li a.link.clicked {
+  color: white;
+  background-color: #ECECEC;
+}
+.sitenavigation li a.nav-selected {
+  background-color: #777;
+  color: #000;
+}
+.sitenavigation li a:hover {
+  background-color: #CCC !important;
+  color: #000;
+}
+.sitenavigation li.clicked > ul {
+  display: block;
+  width: 100%;
+}
+.sitenavigation li ul {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+.sitenavigation li ul a {
+  background-color: #dfdfdf;
+  font-size: 0.8125em;
+}
+.sitenavigation a:hover .sitenavigation li ul li {
+  float: none;
+  display: block!important;
+  margin: 0;
+}
+.sitenavigation li ul ul {
+  left: 100%;
+  margin-top: -40px;
+}
+div.sitenavigation > ul > li > ul {
+	z-index: 1;	
+}
+
+.sitenavigation li ul ul a {
+  background-color: lightgray;
+}
+.sitenavigation .nav-dropdown:hover > a, .sitenavigation .nav-dropdown.clicked > a {
+  background-color: #ECECEC;
+}
+
+.no-js .sitenavigation li:hover > ul {
+  display: block !important;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+	.secondary-menu a {
+		color: #fff;
+		font-size: 10px!important;
+	}
+	
+	.emergency-content {
+		margin: 0 auto;
+		width: 80%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	#secondary-menu {
+		float: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.hero-text h1 {
+		font-size: 3rem;
+	}
+	
+	div.row.support-group-intro, .allyu-support-groups {
+		padding: 0 4.5rem 4.5rem 4.5rem;
+	}
+
+	.footer-logo {
+		padding-bottom: 4.5rem;
+	}
+	
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.hero-text h1 {
+		font-size: 3rem;
+	}
+}
+
+
+@media (max-width: 991px) {
+  .navbar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    z-index: 1;
+	margin-bottom: 0!important;
+  }
+  .navbar .logo {
+    float: right;
+    font-weight: 800;
+    padding: 5px;
+    margin: 0!important;
+  }
+	
+	#site-brand .site-logo {
+	  width: 100px!important;
+	}
+	
+  .navbar .menu-icon {
+    width: 30px;
+    height: 25px;
+    margin-top: 16px!important;
+    display: block;
+    -webkit-tap-highlight-color: transparent;
+    padding: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .navbar .sitenavigation ul {
+    display: none;
+    max-width: none !important;
+  }
+  .navbar .sitenavigation li {
+    float: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .sitenavigation.is-tapped > ul {
+    display: block;
+    position: relative;
+    margin: 0;
+    background-color: #FFF;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0;
+	width: 100%;
+  }
+  .navbar .sitenavigation.is-tapped > ul a {
+    width: 100%;
+    margin: 0;
+    background-color: #ECECEC;
+    display: block;
+    font-size: 1.1875em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    color: #758283;
+    float: none;
+    border: none !important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .navbar .sitenavigation.is-tapped > ul a:hover {
+    background-color: #dfdfdf;
+  }
+  .navbar .sitenavigation.is-tapped > ul li {
+    width: 100%;
+    background-color: #f7f7f7;
+    border-bottom: solid 1px #b9b9b9;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .navbar .sitenavigation.is-tapped > ul li li {
+    background-color: #fff;
+  }
+  .navbar /*.sitenavigation.is-tapped > ul ul*/ .submenu {
+    display: none;
+    width: 100%!important;
+    z-index: 200;
+    border: none;
+    margin-left: 0;
+    padding: 0;
+    position: relative !important;
+  }
+  .navbar .sitenavigation.is-tapped > ul ul ul {
+    clear: both;
+    left: 0;
+    margin-top: 0;
+  }
+  .navbar .sitenavigation.is-tapped > ul ul li {
+    border-bottom: solid 1px #f9f9f9;
+  }
+  .navbar .sitenavigation.is-tapped > ul ul li li a {
+    background-color: #f9f9f9;
+    padding-left: 30px;
+  }
+  .navbar .sitenavigation.is-tapped > ul ul a {
+    background-color: #dfdfdf;
+    font-size: 1em;
+    padding-left: 20px;
+  }
+  .navbar .sitenavigation.is-tapped > ul ul a:before {
+    content: "- ";
+    display: inline-block;
+    margin-right: 8px;
+    color: #000;
+  }
+  .navbar .sitenavigation.is-tapped > ul li.nav-dropdown {
+    cursor: pointer;
+  }
+  .navbar .sitenavigation.is-tapped > ul li.nav-dropdown > a {
+    width: 80%;
+  }
+  .navbar .sitenavigation.is-tapped > ul li.nav-dropdown:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    color: #000;
+    padding: 0;
+    display: block;
+    width: 20%;
+    right: 0;
+    margin-top: -40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /*.navbar .sitenavigation.is-tapped > ul li.expanded:after {
+    display: none;
+  }
+  .navbar .sitenavigation.is-tapped > ul li.expanded li:first-child:before {
+    content: "\f106";
+    font-family: FontAwesome;
+    position: absolute;
+    color: black;
+    padding: 0;
+    display: block;
+    width: 20%;
+    right: 0;
+    margin-top: -40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }*/
+}
+
+@media (min-width: 992px) {
+  
+  .navbar {
+    width: 100%;
+    margin: 0!important;
+  }
+	
+  .navbar .logo {
+    padding: 0;
+    font-size: 0.9375em;
+    font-weight: 800;
+    float: left;
+	line-height: 50px;
+  }
+}
